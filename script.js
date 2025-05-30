@@ -41,4 +41,16 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
+  }
 });
