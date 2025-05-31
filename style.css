@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+}
+
+h2,h1,h3  {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .menu {
   background-color: pink;
   overflow: hidden;
@@ -616,6 +631,30 @@ footer {
   .contato {
     flex-direction: column;
     align-items: center;
+  }
+
+  .saude ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .saude li {
+    margin: 10px 0;
+  }
+  .doencas ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .doencas li {
+    margin: 10px 0;
+  }
+
+  .nomes ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nomes li {
+    margin: 10px 0;
   }
 
   .swiper-pagination {
