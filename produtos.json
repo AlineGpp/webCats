@@ -1,0 +1,24 @@
+{
+    "produtos": [
+        {
+        "id": 1,
+        "titulo": "Originale Ração de Gato  Adulto por KG",
+        "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m44o4tvht0w120.webp",
+         "link": "https://s.shopee.com.br/7081MgiELg"
+        },
+        {
+        "id": 2,
+        "titulo": "kit com 06peças Brinquedo para Gato ",
+        "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m26707mwd5qeb8.webp",
+         "link": "https://s.shopee.com.br/4q3Wn9Ry9S"
+        },
+        {
+        "id": 3,
+        "titulo": "Ração Úmida Whiskas Sachê para Gatos ",
+        "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5n3b2xw6uz416.webp",
+         "link": "https://s.shopee.com.br/7081MQ6hE3"
+        }
+        
+       
+    ]
+}

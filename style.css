@@ -38,6 +38,14 @@ h2,h1,h3  {
   color: #ddd;
 }
 
+
+.menu ul li   {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .menu-list {
   display: flex;
   gap: 1rem;
@@ -155,6 +163,13 @@ h2,h1,h3  {
   align-items: flex-start;
   gap: 10px;
 }
+
+.saude a {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
 .intro-img {
   width: 180px;
   height: 180px;
