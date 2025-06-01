@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
-
 p {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight:300;
+  font-weight: 300;
   font-style: normal;
 }
 
-h2,h1,h3  {
+h2,
+h1,
+h3 {
   font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -38,8 +39,7 @@ h2,h1,h3  {
   color: #ddd;
 }
 
-
-.menu ul li   {
+.menu ul li {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -90,29 +90,30 @@ h2,h1,h3  {
 
 .swiper-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 550px;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height:auto;
   background: none;
   padding: 2rem 0;
   margin: 90px;
-  border: 2px solid #f9bd55;
+  border: 3px solid  #f9bd;
   background-color: #f3dbcb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-
 .swiper-slide img {
-  width: 250px;
+  width: 100%;
+  height: auto;
   height: 250px;
   justify-content: center;
   border-radius: 10px;
+ 
 }
 
 .swiper-pagination-bullet {
@@ -126,28 +127,27 @@ h2,h1,h3  {
   background: #f9bd55;
 }
 
-.videos{
+.videos {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height:auto;
+  height: auto;
   padding: 20px;
   flex-wrap: wrap;
 }
 
-#video{
+#video {
   max-width: 500px;
   height: 500px;
   margin: 20px;
 }
 
-#title-videos{
+#title-videos {
   justify-content: center;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  
 }
 
 .saude-header {
@@ -539,20 +539,39 @@ h2,h1,h3  {
   margin-top: 20px;
 }
 
-.produto h3{
- font-size:15px;
-  margin-top: 10px;
+.produto h3 {
+  font-size: 15px;
   text-align: center;
   width: 100%;
   padding: 10px;
-  background-color: #f9bd
+  border-radius: 5px;
+}
 
+
+
+#recomendados-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: black;
+  margin: 20px;
+}
+
+#recomendados-descricao{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: black;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-produto {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #f9bd55;
+  background-color:  #f9bd;
   color: black;
   border: none;
   border-radius: 5px;
@@ -564,12 +583,15 @@ h2,h1,h3  {
   background-color: #f3dbcb;
   color: black;
   border-radius: 5px;
-  border: 1px solid black ;
+  border: 1px solid black;
 }
 
 .btn-produto a {
   color: black;
   text-decoration: none;
+  font-size: 1.2rem;
+  weight: 500;
+  font-style: light;
 }
 
 .contato {
@@ -635,6 +657,10 @@ footer {
     padding: 10px;
   }
 
+  .intro-img {
+    display: none;
+  }
+
   .alimentacao,
   .saude,
   .doencas,
@@ -648,14 +674,14 @@ footer {
     align-items: center;
   }
 
-  .saude ul{
+  .saude ul {
     flex-direction: column;
     align-items: center;
   }
   .saude li {
     margin: 10px 0;
   }
-  .doencas ul{
+  .doencas ul {
     flex-direction: column;
     align-items: center;
   }
@@ -689,20 +715,16 @@ footer {
     max-width: 300px;
   }
 
-  
-.videos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height:auto;
-}
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
 
-#video{
-  max-width: 500px;
-  height: 500px;
-}
-
-  
-
+  #video {
+    max-width: 500px;
+    height: 500px;
+  }
 }
