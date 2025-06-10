@@ -97,3 +97,27 @@ function mapProducts() {
 
     .catch((error) => console.error("Erro ao carregar produtos:", error));
 }
+
+
+/* Botão voltar para o topo */
+// const backToTopButton = document.querySelector('.back-to-top')
+
+// function backToTop() {
+//   if (window.scrollY >= 560) {
+//     backToTopButton.classList.add('show')
+//   } else {
+//     backToTopButton.classList.remove('show')
+//   }
+// }
+
+
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+ScrollReveal().reveal('.intro #article, .galeria, .cuidados, .alimentacao, .saude, .doencas, .curiosidades, .adocao, .nomes, .produtos .container swiper', { interval: 100 });
+
