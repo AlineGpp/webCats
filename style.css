@@ -772,6 +772,12 @@ footer {
     margin: 10px 0;
   }
 
+  .adotar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .nomes ul {
     flex-direction: column;
     align-items: center;
