@@ -12,30 +12,52 @@ html {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-p {
-  font-family: "Inter", sans-serif;
+
+
+
+ul,li,p {
+  font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: <weight>;
   font-style: normal;
 }
-
 h2,
 h1,
-h3 {
+h3,
+.menu a {
   font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-.menu {
-  background-color: pink;
-  overflow: hidden;
-  justify-content: center;
-  display: flex;
-  height: 60px;
-  align-items: center;
-}
+  .menu {
+    display: flex;
+    align-items: right;
+    padding: 10px;
+    justify-content: space-between;
+    //limitar a lagura do menu ao tamanho da tela do mobile
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+
+  .menu {
+    background-color: pink;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
 
 .menu a {
   color: black;
@@ -65,12 +87,29 @@ h3 {
 }
 
 .intro {
+   margin-top: 60px; 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f9bd55;
+  padding: 40px;
+  gap: 40px;
+}
+
+.intro-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-body{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: #f9bd55;
-  padding: 30px;
-  gap: 20px;
 }
 
 .galeria {
@@ -244,6 +283,13 @@ h1 {
   padding: 20px;
 }
 
+.cuidados-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
 .cuidados a {
   color: black;
   font-size: 1.2rem;
@@ -255,6 +301,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin: 20px;
 }
 
 .nomes h2 {
@@ -712,13 +759,27 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 10px;
+  
+}
+
+@media (max-width: 600px) {
   .menu {
-    display: flex;
-    align-items: right;
-    padding: 10px;
-    justify-content: space-between;
+    width: 100vw;      /* Garante que o menu ocupe toda a largura da tela */
+    max-width: 100vw;  /* Evita ultrapassar a largura da tela */
+    left: 0;
+    right: 0;
+    padding: 0 10px;   /* Espaçamento lateral opcional */
+    justify-content: space-between; /* Distribui itens */
+    background-color: pink; /* Cor de fundo do menu */
   }
+
   .menu-list {
     flex-direction: column;
     width: 100%;
@@ -757,6 +818,12 @@ footer {
     align-items: center;
   }
 
+  .saude h2{
+    width: 100%;
+    text-align: center;
+
+  }
+
   .saude ul {
     flex-direction: column;
     align-items: center;
@@ -787,21 +854,31 @@ footer {
     margin: 10px 0;
   }
 
+  .swiper-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .swiper-pagination {
     display: none !important;
   }
 
   .swiper-slide {
-    width: 100%;
     height: auto;
-    margin: 0;
-    padding: 20px;
-  }
+    max-width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2px;
+    }
 
   .swiper-slide img {
     width: 100%;
     height: auto;
     max-width: 300px;
+    justify-content: center;
+    margin-left: 40px;
   }
 
   .videos {
@@ -810,6 +887,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: auto;
+    margin: 10px;
   }
 
   #video {
