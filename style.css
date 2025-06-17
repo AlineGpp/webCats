@@ -888,6 +888,8 @@ footer a {
     justify-content: center;
     height: auto;
     margin: 10px;
+    width: 100vw;      /* Garante que o menu ocupe toda a largura da tela */
+    max-width: 100vw;  /* Evita ultrapassar a largura da tela */
   }
 
   #video {
