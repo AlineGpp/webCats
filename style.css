@@ -31,6 +31,7 @@ h3,
   font-style: normal;
 }
 
+<<<<<<< HEAD
   .menu {
     display: flex;
     align-items: right;
@@ -58,6 +59,18 @@ h3,
     z-index: 1000;
   }
 
+=======
+@media (max-width: 600px) {
+  .menu {
+    width: 100vw;      /* Garante que o menu ocupe toda a largura da tela */
+    max-width: 100vw;  /* Evita ultrapassar a largura da tela */
+    left: 0;
+    right: 0;
+    padding: 0 10px;   /* Espaçamento lateral opcional */
+    justify-content: space-between; /* Distribui itens */
+    background-color: pink; /* Cor de fundo do menu */
+  }
+>>>>>>> 18bb36a3d655909176b87bdd493bd9e90a2a1465
 
 .menu a {
   color: black;
