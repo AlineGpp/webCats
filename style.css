@@ -15,7 +15,7 @@ html {
 
 
 
-ul,li,p {
+ul,li,p,a {
   font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -637,7 +637,19 @@ h1 {
   font-size: 1.2rem;
   line-height: 1.5;
   color: black;
-  margin-top: 20px;
+  justify-content: center;
+  text-align: left;
+}
+
+.adocao span {
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
 }
 
 .adocao div {
@@ -646,6 +658,13 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.adocao a{
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .produtos {
@@ -818,6 +837,11 @@ footer a {
     align-items: center;
   }
 
+  .saude-header{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .saude h2{
     width: 100%;
     text-align: center;
@@ -839,7 +863,7 @@ footer a {
     margin: 10px 0;
   }
 
-  .adotar {
+  .adocao {
     display: flex;
     flex-direction: column;
     align-items: center;
